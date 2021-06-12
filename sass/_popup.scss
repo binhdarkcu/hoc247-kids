@@ -1,0 +1,56 @@
+.modal-backdrop.show {
+  opacity: 0.8;
+}
+
+.common-modal {
+
+    a.close {
+      background: url(../images/close.png) no-repeat center;
+      width: 27px;
+      height: 27px;
+      position: absolute;
+      top: 0;
+      right: -33px;
+    }
+    .modal-container {
+        width: 920px;
+        background: #fff;
+        position: relative;
+        z-index: 2;
+        display: table;
+        margin: 0 auto;
+        padding: 0px;
+        margin-top: 25px;
+        &.w715 {
+            width: 715px;
+        }
+        &.w775 {
+            width: 775px;
+        }
+        &.w755 {
+            width: 755px;
+        }
+    }
+
+    a.btn {
+      font-size: 15px;
+      display: table;
+      margin: 0 auto;
+      height: 40px;
+      line-height: 40px;
+    }
+    .btn-submit {
+      display: table;
+      margin: 0 auto;
+      a {
+        width: 140px;
+        display: inline-block;
+        margin-left: 10px;
+        margin-right: 10px;
+      }
+    }
+    .editor-common {
+      height: 215px;
+    }
+    
+}

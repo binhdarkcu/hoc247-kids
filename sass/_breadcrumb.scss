@@ -1,0 +1,41 @@
+.breadcrumb {
+    padding: 0;
+    background: transparent;
+    width: calc(100% + 32px);
+    border-bottom: 1px solid #e2e2e2;
+    margin-left: -16px;
+    padding-left: 16px;
+    .horizontal-scroll-menu {
+      min-height: 25px;
+      a:after{
+        display: none;
+      }
+    }
+    .related-title {
+      font-size: 13px;
+
+    }
+    ul {
+        padding: 0;
+        margin-bottom: 0;
+        color: #b3b3b3;
+        li {
+          display: inline-block;
+
+          &.related-title {
+              border-width: 3px;
+              line-height: 14px;
+              color: #e60019;
+              padding-right: 10px;
+              margin-bottom: 0;
+          }
+            a{
+                font-size: 13px;
+                color: #b3b3b3;
+                padding: 0;
+                padding-right: 10px;
+            }
+
+        }
+    }
+}

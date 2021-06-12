@@ -1,0 +1,260 @@
+
+/*** ESSENTIAL STYLES ***/
+.sf-menu, .sf-menu * {
+	margin:			0;
+	padding:		0;
+	list-style:		none;
+}
+.sf-menu {
+	line-height:	1.0;
+}
+.sf-menu ul, .sf-menu .submenu {
+	position:		absolute;
+	top:			-999em;
+	width:			10em; /* left offset of submenus need to match (see below) */
+}
+.sf-menu ul li, .sf-menu .submenu li {
+	width:			100%;
+}
+.sf-menu li:hover {
+	visibility:		inherit; /* fixes IE7 'sticky bug' */
+}
+.sf-menu li {
+	float:			left;
+}
+.sf-menu a {
+	display:		block;
+	position:		relative;
+}
+header .navigation .submenu  li a{
+  line-height: 16px;
+}
+.navigation.navmenu {
+	position: relative;
+}
+
+.sf-menu li:hover ul, .sf-menu li:hover .submenu,
+.sf-menu li.sfHover ul, .sf-menu li.sfHover .submenu {
+	left:			80px;
+	top:			62px; /* match top ul list item height */
+	z-index:		99;
+
+}
+ul.sf-menu li:hover li ul,
+ul.sf-menu li.sfHover li ul {
+	top:			-999em;
+}
+ul.sf-menu li li:hover ul,
+ul.sf-menu li li.sfHover ul {
+	left:			10em; /* match ul width */
+	top:			0;
+}
+ul.sf-menu li li:hover li ul,
+ul.sf-menu li li.sfHover li ul {
+	top:			-999em;
+}
+ul.sf-menu li li li:hover ul,
+ul.sf-menu li li li.sfHover ul {
+	left:			10em; /* match ul width */
+	top:			0;
+}
+
+/*** DEMO SKIN ***/
+.sf-menu {
+
+}
+.sf-menu a {
+	text-decoration:none;
+}
+.sf-menu a, .sf-menu a:visited  { /* visited pseudo selector so IE6 applies text colour*/
+	color:			#FFFFFF;
+}
+header .navigation .submenu {
+  width: calc(100% - 160px);
+  display: block;
+  background: #fff;
+  border-radius: 0;
+}
+.sf-menu li li {
+	color:#646464;
+}
+.sf-menu li li li {
+	color:#646464;
+}
+.sf-menu li:hover, .sf-menu li.sfHover,
+.sf-menu a:focus, .sf-menu a:hover, .sf-menu a:active {
+
+	outline:		0;
+}
+
+/*** arrows **/
+.sf-menu a.sf-with-ul {
+	/*padding-left:12px;
+	padding-right:12px;*/
+	min-width:1px; /* trigger IE7 hasLayout so spans position accurately */
+	text-transform:uppercase;
+}
+.sf-menu a.sf-with-ul:hover {
+
+}
+.sf-sub-indicator1 {
+	position:		absolute;
+	display:		block;
+	right:			.75em;
+	top:			1.05em; /* IE6 only */
+	width:			0px;
+	height:			0px;
+	text-indent: 	-999em;
+	overflow:		hidden;
+	/*background:		url('../img/arrows-ffffff.png') no-repeat -10px -100px; /* 8-bit indexed alpha png. IE6 gets solid image only */
+}
+a > .sf-sub-indicator1 {  /* give all except IE6 the correct values */
+	top:			.8em;
+	background-position: 0 -100px; /* use translucent arrow for modern browsers*/
+}
+/* apply hovers to modern browsers */
+a:focus > .sf-sub-indicator1,
+a:hover > .sf-sub-indicator1,
+a:active > .sf-sub-indicator1,
+li:hover > a > .sf-sub-indicator1,
+li.sfHover > a > .sf-sub-indicator1 {
+	background-position: -10px -100px; /* arrow hovers for modern browsers*/
+
+}
+
+/* point right for anchors in subs */
+.sf-menu ul .sf-sub-indicator1 { background-position:  -10px 0; }
+.sf-menu ul a > .sf-sub-indicator1 { background-position:  0 0; }
+/* apply hovers to modern browsers */
+.sf-menu ul a:focus > .sf-sub-indicator1,
+.sf-menu ul a:hover > .sf-sub-indicator1,
+.sf-menu ul a:active > .sf-sub-indicator1,
+.sf-menu ul li:hover > a > .sf-sub-indicator1,
+.sf-menu ul li.sfHover > a > .sf-sub-indicator1 {
+	background-position: -10px 0; /* arrow hovers for modern browsers*/
+}
+
+/*** shadows for all but IE6 ***/
+.sf-shadow ul {
+	padding: 0 0px 0px 0;
+	-moz-border-radius-bottomleft: 17px;
+	-moz-border-radius-topright: 17px;
+	-webkit-border-top-right-radius: 17px;
+	-webkit-border-bottom-left-radius: 17px;
+
+}
+.sf-shadow ul.sf-shadow-off {
+	background: transparent;
+}
+ul.submenu
+{
+	border:1px solid #ececec;
+	width:250px;
+}
+ul.submenu li
+{
+	float:left;
+	width:250px;
+	margin-top:0px;
+	padding-top:0px;
+	background: none #FFFFFF;
+	border-bottom:1px solid #ececec;
+  padding-top: 4px;
+    padding-bottom: 4px;
+}
+
+ul.submenu a
+{
+	background:none;
+	color:#555555 !important;
+  text-align: left;
+}
+header .navigation ul.submenu li {
+  text-align: left;
+}
+.submenu a:hover
+{
+	color:red !important;
+}
+
+ul.submenu li  li
+{
+	float:left;
+	width:200px;
+	margin-left:70px;
+	margin-top:0px;
+	padding-top:0px;
+}
+.subend
+{
+	position:absolute !important;right: -1px; left: auto!important;
+}
+.submenu .sf-menu-left {
+	width: 280px;
+	float: left;
+	margin-top: 35px;
+	padding-left: 40px;
+	&:after {
+		content: "";
+		clear: both;
+		display: block;
+	}
+}
+.submenu .sf-menu-right {
+	width: calc(100% - 280px);
+	float: right;
+	padding-top: 38px;
+	.sf-menu-col {
+		float: left;
+		width: calc(25% - 40px);
+		margin-right: 40px;
+		.news-thumbnail {
+			margin-bottom: 10px;
+		}
+		a {
+			position: initial;
+			@include RobotoBold(16px);
+			color: #202020;
+			text-transform: initial;
+			white-space: normal;
+		}
+
+	}
+}
+header {
+	.header-middle {
+		.navigation {
+			li {
+				&:hover  {
+					> a {
+						color: #fff02a;
+					}
+				}
+
+				.submenu {
+					padding-bottom: 80px;
+					box-shadow: 0px 0px 8px 2px rgba(0, 0, 0, 20%);
+					ul {
+						position: relative;
+						top: 0;
+						left: 0;
+						li {
+							min-width: 166px;
+							border-top: 1px solid #9a9a9a;
+							padding: 8px 0;
+							min-height: initial;
+							&:last-child {
+								border-bottom: 1px solid #9a9a9a;
+							}
+							a {
+								@include OswaldRegular(13px);
+								color: #202020;
+
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}
