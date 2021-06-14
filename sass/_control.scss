@@ -58,7 +58,7 @@
 		}
 	}
 	span.s-label {
-		@include RobotoRegular(14px, 24px);
+		@include NunitoRegular(14px, 24px);
 		position: relative;
 		margin-left: 35px;
 		cursor: pointer;
@@ -202,89 +202,20 @@
 }
 
 
-.btn {
-	background: transparent;
-	color: #ccc;
-	@include RobotoRegular(13px, 35px);
-	min-width: inherit;
-	@include BorderRadius(3px);
+.btn-orange-30 {
+	background: url(../images/btn-orange-30.png) no-repeat;
+	height: 30px;
+	width: 100%;
+	min-width: 113px;
 	display: inline-block;
-	padding: 0 25px;
-	&.editable-submit {
-		background: #0AB410;
-	}
-	&.editable-cancel {
-		background: #e2e2e2;
-	}
-	&.red {
-		color: #fff!important;
-		background: #e60019;
-	}
-	height: 35px;
-	&.default {
-		background: #BCBCBC;
-		color: #fff;
-	}
-	&.blue {
-		background: #118AEF;
-		color: #fff;
-		@include RobotoRegular(14px, 35px);
-	}
-	&.green {
-		background: #0AB410;
-	}
-	&.yellow {
-		background: #FFB83C;
-		color: #fff;
-	}
-	&.orange {
-		background: #FD8842;
-		color: #fff;
-	}
-	&.big {
-		font-size: 15px;
-		font-weight: 700;
-		height: 40px;
-		line-height: 40px;
-	}
-	&:hover{
-		opacity: 0.8;
-	}
-	&.h40 {
-		height: 40px!important;
-		line-height: 40px!important;
-	}
-	&.h36 {
-		height: 36px!important;
-		line-height: 36px!important;
-	}
-	&.fullwidth {
-		width: 100%;
-	}
-	&.wauto {
-		width: auto!important;
-	}
-	.arrow-white {
-		background: url(../images/icons/right-arrow-white.png) no-repeat;
-		width: 11px;
-		height: 10px;
-		display: inline-block;
-		margin-left: 5px;
-	}
-	&.blue-btn {
-		background: #118AEF;
-		border-radius: 5px;
-		font-size: 14px;
-		color: #fff;
-	}
-	&.h50 {
-		height: 50px;
-		line-height: 50px;
-	}
-	&.disabled {
-		pointer-events: none;
-		background: #CBCBCB!important;
-	}
+}
+
+.btn-green-30 {
+	background: url(../images/btn-green-30.png) no-repeat;
+	height: 30px;
+	width: 100%;
+	min-width: 113px;
+	display: inline-block;
 }
 
 .custom-button-checkbox {
@@ -372,7 +303,7 @@
      background-size: 6px;
 	 height: 40px;
  	width: 100%;
- 	@include RobotoRegular(13px);
+ 	@include NunitoRegular(13px);
  	@include BorderRadius(5px);
  	border: 1px solid #e2e2e2;
     -webkit-appearance: none;

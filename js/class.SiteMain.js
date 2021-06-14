@@ -2,13 +2,16 @@
 var SiteMain = (function() {
 
 	function init(){
-		var videoObj = $('#video-news');
-		if(videoObj.length > 0) {
-			playVideo();
-		}
+		// var videoObj = $('#video-news');
+		// if(videoObj.length > 0) {
+		// 	playVideo();
+		// }
+		createSlickSlider('.slick-slider')
 
-		$('ul.sf-menu').superfish();
+		//$('ul.sf-menu').superfish();
 		openMobileMenu()
+
+
 	}
 
 	function openMobileMenu() {
@@ -47,7 +50,7 @@ var SiteMain = (function() {
 
 	function createSlickSlider(clsEle) {
 		$(clsEle).slick({
-		  dots: false,
+		  dots: true,
 		  arrows: true,
 		  infinite: false,
 		  speed: 500,

@@ -213,7 +213,7 @@ ul.submenu li  li
 		}
 		a {
 			position: initial;
-			@include RobotoBold(16px);
+			@include NunitoRegular(16px);
 			color: #202020;
 			text-transform: initial;
 			white-space: normal;
@@ -247,7 +247,7 @@ header {
 								border-bottom: 1px solid #9a9a9a;
 							}
 							a {
-								@include OswaldRegular(13px);
+								@include NunitoRegular(13px);
 								color: #202020;
 
 							}

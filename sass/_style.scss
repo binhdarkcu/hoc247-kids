@@ -23,7 +23,7 @@ a {
 	}
 }
 .container {
-	max-width: 1170px!important;
+	max-width: 1025px!important;
 }
 
 a{text-decoration: none;&:hover {
@@ -168,9 +168,6 @@ a{text-decoration: none;&:hover {
 	padding: 20px 0;
 }
 
-.relative {
-	position: relative;
-}
 
 .green {
     color:#0AB410;
@@ -204,7 +201,7 @@ a{text-decoration: none;&:hover {
 }
 
 .title18Bold {
-	@include RobotoBold(18px, 23px);
+	@include NunitoRegular(18px, 23px);
 }
 .color-red {
 	color: #e60019;
@@ -219,7 +216,7 @@ a{text-decoration: none;&:hover {
 }
 .relative {
 	position: relative;
-	z-index: 2;
+	z-index: 3;
 }
 .center {
 	text-align: center;
@@ -237,88 +234,88 @@ a{text-decoration: none;&:hover {
 }
 
 .title19Bold {
-	@include RobotoBold(19px, 24px);
+	@include NunitoBold(19px, 24px);
 }
 .title20Bold {
-	@include RobotoBold(20px);
+	@include NunitoBold(20px);
 }
 .title12Bold {
-	@include RobotoBold(12px, 15px);
+	@include NunitoBold(12px, 15px);
 }
 .title13Bold {
-	@include RobotoBold(13px, 16px);
+	@include NunitoBold(13px, 16px);
 }
 .title14Bold {
-	@include RobotoBold(14px, 18px);
+	@include NunitoBold(14px, 18px);
 }
 .title15Bold {
-	@include RobotoBold(15px, 22px);
+	@include NunitoBold(15px, 22px);
 }
 .title16Bold {
-	@include RobotoBold(16px, 20px);
+	@include NunitoBold(16px, 20px);
 }
 .title17Bold {
-	@include RobotoBold(17px, 21px);
+	@include NunitoBold(17px, 21px);
 }
 .title18Bold {
-	@include RobotoBold(18px, 22px);
+	@include NunitoBold(18px, 22px);
 }
 .title19Bold {
-	@include RobotoBold(19px, 22px);
+	@include NunitoBold(19px, 22px);
 }
 .title20Bold {
-	@include RobotoBold(20px, 25px);
+	@include NunitoBold(20px, 25px);
 }
 .title21Bold {
-	@include RobotoBold(21px, 26px);
+	@include NunitoBold(21px, 26px);
 }
 .title23Bold {
-	@include RobotoBold(23px, 29px);
+	@include NunitoBold(23px, 29px);
 }
 .title22Bold {
-	@include RobotoBold(22px, 28px);
+	@include NunitoBold(22px, 28px);
 }
 .title24Bold {
-	@include RobotoBold(24px);
+	@include NunitoBold(24px);
 }
 .title25Bold {
-	@include RobotoBold(25px);
+	@include NunitoBold(25px);
 }
 .title26Bold {
-	@include RobotoBold(26px);
+	@include NunitoBold(26px);
 }
 .title28Bold {
-	@include RobotoBold(28px);
+	@include NunitoBold(28px);
 }
 .title30Bold {
-	@include RobotoBold(30px);
+	@include NunitoBold(30px);
 }
 .title33Bold {
-	@include RobotoBold(33px);
+	@include NunitoBold(33px);
 }
 
 .title32Bold {
-	@include RobotoBold(32px, 1.3);
+	@include NunitoBold(32px, 1.3);
 }
 
 .title36Bold {
-	@include RobotoBold(36px);
+	@include NunitoBold(36px);
 }
 .title37Bold {
-	@include RobotoBold(37px, 43px);
+	@include NunitoBold(37px, 43px);
 }
 .title38Bold {
-	@include RobotoBold(38px, 43px);
+	@include NunitoBold(38px, 43px);
 }
 .title40Bold {
-	@include RobotoBold(40px);
+	@include NunitoBold(40px);
 }
 
 .regular15 {
-	@include RobotoRegular(15px, 1.3);
+	@include NunitoRegular(15px, 1.3);
 }
 .regular13 {
-	@include RobotoRegular(13px, 1.3);
+	@include NunitoRegular(13px, 1.3);
 }
 .padding-left-10 {
 	padding-left: 10px;
@@ -418,7 +415,7 @@ a{text-decoration: none;&:hover {
 			&.current-page {
 				background: #777777;
 				color: #fff;
-				@include RobotoBold(12px, 33px);
+				@include NunitoRegular(12px, 33px);
 				text-align: center;
 				display: inline-block;
 			}
@@ -437,7 +434,7 @@ a{text-decoration: none;&:hover {
 			}
 
 			a{
-				@include RobotoRegular(12px, 33px);
+				@include NunitoRegular(12px, 33px);
 				text-align: center;
 				display: block;
 				height: 33px;
