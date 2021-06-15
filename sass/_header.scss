@@ -134,6 +134,12 @@ header {
             right: -50px;
         }
     }
+    .slick-item {
+        box-shadow: 2px 3px 4px 0px rgb(0 0 0 / 20%);
+        img {
+            border-radius: 10px;
+        }
+    }
     .slick-dots {
         display: table;
         margin: 17px auto 0;

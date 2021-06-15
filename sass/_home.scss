@@ -1,0 +1,61 @@
+.app-study-section {
+    margin-top: 200px;
+    margin-bottom: 95px;
+    text-align: center;
+    .title {
+        margin-bottom: 15px;
+    }
+    .animation-block{
+        position: relative;
+        .app-image {
+            img {
+                margin-bottom: 25px;
+            }
+        }
+        .ani-block {
+            position: absolute;
+            max-width: 275px;
+            p {
+                @include NunitoBold(13px);
+                color: #767676;
+                padding-top: 5px;
+            }
+            &.block-01 {
+                top: 40px;
+                left: 80px;
+            }
+
+            &.block-02 {
+                top: 40px;
+                right: 50px;
+            }
+
+            &.block-03 {
+                bottom: 70px;
+                left: 20px;
+            }
+
+            &.block-04 {
+                bottom: 70px;
+                right: 50px;
+            }
+        }
+    }
+}
+.app-benefit-section {
+    position: relative;
+    &:before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        background: url(../images/bg-blue-2.png) no-repeat -150px 0;
+        background-size: cover;
+        min-height: 1120px;
+        width: calc(100% + 330px);
+    }
+}
+.white-radius-box {
+    background: #fff;
+    border-radius: 45px;
+}

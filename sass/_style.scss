@@ -1,14 +1,15 @@
 
 /* ! PRIMARY STYLES */
-html, body{ min-width: 320px; overflow: auto; overflow-x: hidden;}
+html, body{ min-width: 320px; overflow-x: hidden;}
 body {
 	font: $defaultFont; color: #5a5a5a;
 	background: #fff;
-	min-width: 1024px;
+	min-width: 1000px;
+	overflow: hidden;
 	-webkit-font-smoothing: auto;
 	-moz-osx-font-smoothing: auto;
 	&.hidden {
-		overflow: hidden;
+
 	}
 }
 html {
@@ -23,7 +24,7 @@ a {
 	}
 }
 .container {
-	max-width: 1025px!important;
+	max-width: 1025px;
 }
 
 a{text-decoration: none;&:hover {
@@ -297,7 +298,9 @@ a{text-decoration: none;&:hover {
 .title32Bold {
 	@include NunitoBold(32px, 1.3);
 }
-
+.title35Bold {
+	@include NunitoBold(35px);
+}
 .title36Bold {
 	@include NunitoBold(36px);
 }
