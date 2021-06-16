@@ -1,3 +1,70 @@
 footer {
     background: #0C53B4;
+    .footer-top {
+        padding-top: 25px;
+        padding-bottom: 15px;
+        .footer-socials {
+            text-align: right;
+            padding-top: 10px;
+            position: relative;
+            right: -10px;
+            a {
+                background: url(../images/fb.png) no-repeat;
+                width: 121px;
+                height: 53px;
+                display: inline-block;
+                &.yt {
+                    background: url(../images/yt.png) no-repeat;
+                }
+            }
+        }
+    }
+    .footer-middle {
+        .footer-border {
+            border-top: 1px solid #7483EE;
+            border-bottom: 1px solid #7483EE;
+            padding-top: 25px;
+            padding-bottom: 25px;
+        }
+        div {
+            color: #fff;
+        }
+        .nav-list {
+            a, .workday {
+                color: #fff;
+                font-size: 15px;
+                display: block;
+                margin-top: 15px;
+            }
+            .hotline-icon {
+                background: url(../images/call.png) no-repeat left center;
+                padding-left: 23px;
+                margin-left: -23px;
+            }
+            .email-icon {
+                background: url(../images/email.png) no-repeat left center;
+                padding-left: 23px;
+                margin-left: -23px;
+            }
+            .workday {
+                background: url(../images/clock.png) no-repeat left center;
+                padding-left: 23px;
+                margin-left: -23px;
+            }
+        }
+    }
+
+    .footer-bottom {
+        padding-top: 28px;
+        padding-bottom: 38px;
+        p {
+            line-height: 1.7;
+        }
+    }
+    .install-app {
+        text-align: center;
+        .app-store {
+            padding: 15px 0;
+        }
+    }
 }
