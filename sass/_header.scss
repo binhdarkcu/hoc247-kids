@@ -80,7 +80,7 @@ header {
   }
 }
 
-.banner-slider {
+.banner-slider, .customer-slider {
     margin-top: 10px;
     .slick-arrow {
         width: 62px;
@@ -124,6 +124,23 @@ header {
             &.slick-active {
                 button {
                     background: #FFFFFF;
+                }
+            }
+        }
+    }
+}
+
+.customer-slider {
+    .slick-dots {
+        margin: 20px auto 0;
+        li {
+            button {
+                background: #fff;
+                opacity: 0.62;
+            }
+            &.slick-active {
+                button {
+                    opacity: 1;
                 }
             }
         }

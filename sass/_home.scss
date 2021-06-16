@@ -242,3 +242,138 @@
         }
     }
 }
+
+.pb-40 {
+    padding-bottom: 40px;
+}
+
+.customer-feeling {
+    position: relative;
+    padding-top: 170px;
+    padding-bottom: 60px;
+    &:before {
+        content: '';
+        background: url(../images/bg-customer.png) no-repeat;
+        background-size: 100%;
+        width: calc(100% + 400px);
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: -400px;
+    }
+
+    &:after {
+        content: '';
+        background: #FBBB04;
+        width: 100%;
+        height: 50%;
+        bottom: 0;
+        left: 0;
+        position: absolute;
+    }
+
+    .customer-slider {
+        .slick-list {
+            padding-top: 28px;
+        }
+        .slider-item {
+            width: 315px;
+            float: left;
+            background: #fff;
+            @include BorderRadius(18px);
+            margin-right: 14px;
+            margin-left: 14px;
+            padding: 0 15px 35px;
+            height: 185px;
+            p {
+                font-size: 15px;
+            }
+            .title-name {
+                text-align: center;
+                padding-top: 12px;
+                padding-bottom: 15px;
+            }
+            .customer-img {
+                background: #fff;
+                width: 57px;
+                height: 57px;
+                @include BorderRadius(50%);
+                box-shadow: 0 1px 2px rgba(13, 23, 99, 0.6);
+                display: table;
+                margin: 0 auto -28px;
+                top: -28px;
+                position: relative;
+                .middle {
+                    width: 49px;
+                    height: 49px;
+                    top: 4px;
+                    left: 4px;
+                    @include BorderRadius(50%);
+                }
+            }
+        }
+    }
+}
+
+.register-consult {
+    background: url(../images/bg-star-dot-3.png) no-repeat #1870E8;
+    background-size: 100%;
+    min-height: 539px;
+    position: relative;
+    padding-top: 45px;
+    &:before {
+        content: "";
+        background: url(../images/bg-star-dot-1.png) no-repeat top center;
+        width: 100%;
+        height: 279px;
+        position: absolute;
+        top: 35px;
+        left: 0;
+    }
+    &:after {
+        content: "";
+        background: url(../images/bg-star-dot-2.png) no-repeat top center;
+        width: 100%;
+        height: 199px;
+        position: absolute;
+        bottom: 35px;
+        left: 0;
+    }
+
+    .app-image {
+        .bg-image {
+            width: 512px;
+            height: 367px;
+            left: -30px;
+            position: relative;
+        }
+    }
+
+
+}
+
+.register-radius-box {
+    background: #E8F0FE;
+    border-radius: 20px;
+    padding: 20px 23px;
+    text-align: center;
+    position: relative;
+    border-bottom: 12px solid #CADAF6;
+    form {
+        margin-top: 20px;
+    }
+    input[type="text"], input[type="tel"], input[type="email"] {
+        height: 60px;
+        width: 100%;
+        background: #fff;
+        font-size: 13px;
+        color: #767676;
+        border-radius: 10px;
+        padding: 0 23px;
+        line-height: 60px;
+        border: none;
+    }
+    .input-field {
+        margin-bottom: 10px;
+    }
+}

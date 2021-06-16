@@ -6,7 +6,9 @@ var SiteMain = (function() {
 		// if(videoObj.length > 0) {
 		// 	playVideo();
 		// }
-		createSlickSlider('.slick-slider')
+		createSlickSlider('.slick-slider', true, 1)
+
+		createSlickSlider('.customer-slider', false, 3)
 
 		//$('ul.sf-menu').superfish();
 		openMobileMenu()
@@ -48,13 +50,13 @@ var SiteMain = (function() {
 		}
 	}
 
-	function createSlickSlider(clsEle) {
+	function createSlickSlider(clsEle, arrows, slidesToShow) {
 		$(clsEle).slick({
 		  dots: true,
-		  arrows: true,
+		  arrows: arrows,
 		  infinite: false,
 		  speed: 500,
-		  slidesToShow: 1,
+		  slidesToShow: slidesToShow,
 		  slidesToScroll: 1,
 		  variableWidth: true,
 		});
