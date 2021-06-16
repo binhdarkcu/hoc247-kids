@@ -208,6 +208,22 @@
 	width: 100%;
 	min-width: 113px;
 	display: inline-block;
+	&.h43 {
+		height: 43px;
+		line-height: 43px;
+		min-width: 165px;
+		background-size: cover;
+	}
+}
+
+.btn-orange-68 {
+	background: url(../images/btn-orange-68.png) no-repeat;
+	height: 68px;
+	line-height: 68px;
+	min-width: 317px;
+	text-align: center;
+	display: inline-block;
+	color: #fff;
 }
 
 .btn-green-30 {
@@ -216,6 +232,12 @@
 	width: 100%;
 	min-width: 113px;
 	display: inline-block;
+	&.h43 {
+		height: 43px;
+		line-height: 43px;
+		min-width: 165px;
+		background-size: cover;
+	}
 }
 
 .custom-button-checkbox {

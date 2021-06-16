@@ -2,6 +2,11 @@ header {
     background: #1870E8;
     min-height: 65px;
     position: relative;
+    .app-store {
+        float: right;
+        margin-top: -7px;
+        margin-left: 5px;
+    }
   .logo {
       position: relative;
         margin-top: 10px;
@@ -53,46 +58,7 @@ header {
           }
       }
   }
-  .app-store {
-      float: right;
-      margin-top: -7px;
-      margin-left: 5px;
-      a {
-          color: #fff;
-          display: inline-block;
-          width: 113px;
-            text-align: center;
-            line-height: 30px;
-            margin-left: 10px;
-            &:hover {
-                opacity: 0.9;
-            }
-            i {
-                margin-right: 6px;
-            }
-          &.ios-app {
-              i {
-                  background: url(../images/apple.png) no-repeat;
-                  width: 13px;
-                  height: 16px;
-                  display: inline-block;
-                  position: relative;
-                  top: 3px;
-              }
-          }
-          &.google-app {
-              i {
-                  background: url(../images/google-play.png) no-repeat;
-                  width: 13px;
-                  height: 16px;
-                  display: inline-block;
-                  position: relative;
-                  top: 4px;
-                  margin-right: 3px;
-              }
-          }
-      }
-  }
+
 
   .bg-header-home-01 {
       background: url(../images/bg-header01.png) no-repeat;
@@ -159,6 +125,45 @@ header {
                 button {
                     background: #FFFFFF;
                 }
+            }
+        }
+    }
+}
+
+.app-store{
+
+    a {
+        color: #fff;
+        display: inline-block;
+        width: 113px;
+          text-align: center;
+          line-height: 30px;
+          margin-left: 10px;
+          &:hover {
+              opacity: 0.9;
+          }
+          i {
+              margin-right: 6px;
+          }
+        &.ios-app {
+            i {
+                background: url(../images/apple.png) no-repeat;
+                width: 13px;
+                height: 16px;
+                display: inline-block;
+                position: relative;
+                top: 3px;
+            }
+        }
+        &.google-app {
+            i {
+                background: url(../images/google-play.png) no-repeat;
+                width: 13px;
+                height: 16px;
+                display: inline-block;
+                position: relative;
+                top: 4px;
+                margin-right: 3px;
             }
         }
     }

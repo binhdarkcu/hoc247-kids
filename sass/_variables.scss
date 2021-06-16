@@ -51,12 +51,19 @@ $colorRed: #EB4235;
 $colorBlue: #1870E8;
 $colorD9: #d9d9d9;
 $colorGray: #e2e2e2;
+$colorYellow: #FFD245;
 
 .color-blue {
 	color: $colorBlue;
 }
 .color-red{
 	color: $colorRed;
+}
+.color-white {
+	color: $colorWhite;
+}
+.color-yellow {
+	color: $colorYellow;
 }
 
 @mixin BorderRadius($rd) {
