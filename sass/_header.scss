@@ -61,20 +61,19 @@ header {
 
 
   .bg-header-home-01 {
-      background: url(../images/bg-header01.png) no-repeat;
+      background: url(../images/bg-header.png) repeat-x center -20px;
       width: calc(100% + 60px);
-        min-height: 565px;
+        min-height: 609px;
         position: absolute;
         left: -60px;
-        background-size: cover;
         z-index: 2;
   }
   .bg-header-home-02 {
       background: url(../images/bg-header02.png) no-repeat;
       width: calc(100% + 135px);
-        min-height: 565px;
+        min-height: 612px;
         position: absolute;
-        left: -135px;
+        left: -255px;
         background-size: cover;
         z-index: 1;
   }
