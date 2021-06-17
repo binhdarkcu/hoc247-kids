@@ -2,4 +2,143 @@
   .container {
     max-width: calc(100% - 150px) !important;
   }
+
+  header {
+      .navigation {
+          ul {
+              li {
+                  margin-left: 10px;
+                  margin-right: 10px;
+              }
+          }
+      }
+  }
+  .customer-feeling {
+      .customer-slider {
+          .slider-item {
+             width: 264px;
+         }
+      }
+  }
+
+  .register-consult {
+      .app-image {
+          .bg-image {
+                  width: 100%;
+                  background-size: 100%!important;
+          }
+      }
+  }
+
+  .footer-bottom {
+      .btn-orange-30.h43 {
+          min-width: 145px;
+          background-size: contain;
+      }
+  }
+
+  .app-study-section {
+      .animation-block {
+          .ani-block {
+              &.block-01 {
+                  left: 0;
+              }
+              &.block-02 {
+                  right: 0;
+              }
+              &.block-03 {
+                  left: 0;
+              }
+              &.block-04 {
+                  right: 0;
+              }
+          }
+      }
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 991px) {
+    body {
+        min-width: 768px;
+    }
+  .container {
+    max-width: calc(100% - 150px) !important;
+  }
+
+  header {
+      .app-store {
+          margin-top: 4px;
+      }
+      .menu-section {
+          padding-top: 20px;
+      }
+      .navigation {
+          float: right;
+          ul {
+              li {
+                  margin-left: 10px;
+                  margin-right: 10px;
+              }
+          }
+      }
+  }
+
+  .banner-slider  {
+      .slick-item {
+
+        img {
+            width: 100%;
+        }
+      }
+       .slick-arrow {
+           width: 45px;
+           background-size: contain!important;
+       }
+  }
+
+  .app-benefit-section {
+      &:before {
+          min-height: 1730px;
+          background-size: cover;
+      }
+      .white-radius-box {
+          margin-bottom: 35px;
+      }
+  }
+
+  .app-study-section {
+      .animation-block {
+          .app-image {
+              img {
+                  width: 280px;
+              }
+          }
+          .red-down-left {
+              left: 4px;
+          }
+          .red-top-left {
+              top: 10px;
+          }
+          .red-top-right {
+                  margin-right: 35px;
+          }
+          .ani-block {
+              max-width: 275px;
+              &.block-01 {
+                  left: 0;
+              }
+              &.block-02 {
+                  right: 0;
+              }
+              &.block-03 {
+                  left: 0;
+                  bottom: 70px;
+              }
+              &.block-04 {
+                  right: 0;
+                  bottom: 70px;
+              }
+          }
+      }
+  }
 }

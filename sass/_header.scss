@@ -79,6 +79,12 @@ header {
   }
 }
 
+.banner-slider {
+    .slick-list {
+        border-radius: 10px;
+    }
+}
+
 .banner-slider, .customer-slider {
     margin-top: 10px;
     .slick-arrow {

@@ -285,6 +285,9 @@ a{text-decoration: none;&:hover {
 .title26Bold {
 	@include NunitoBold(26px);
 }
+.title27Bold {
+	@include NunitoBold(27px);
+}
 .title28Bold {
 	@include NunitoBold(28px);
 }

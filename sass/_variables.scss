@@ -54,16 +54,16 @@ $colorGray: #e2e2e2;
 $colorYellow: #FFD245;
 
 .color-blue {
-	color: $colorBlue;
+	color: $colorBlue!important;
 }
 .color-red{
-	color: $colorRed;
+	color: $colorRed!important;
 }
 .color-white {
-	color: $colorWhite;
+	color: $colorWhite!important;
 }
 .color-yellow {
-	color: $colorYellow;
+	color: $colorYellow!important;
 }
 
 @mixin BorderRadius($rd) {

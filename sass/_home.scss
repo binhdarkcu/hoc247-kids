@@ -273,7 +273,9 @@
 
     .customer-slider {
         .slick-list {
-            padding-top: 28px;
+            padding-top: 28px!important;
+            padding-left: 0!important;
+            padding-right: 0!important;
         }
         .slider-item {
             width: 315px;
