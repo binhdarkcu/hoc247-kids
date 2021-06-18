@@ -2,6 +2,23 @@
     &.liveclass {
         min-height: 420px;
         .banner-normal {
+            &.for-live-stream {
+                .btn-orange {
+                    margin-top: 10px;
+                }
+                .banner-box{
+                    left: 0;
+                    width: 50%;
+                }
+                .banner-img {
+                    background: url(../images/banber-live-stream-2.png) no-repeat;
+                    bottom: -56px;
+                    right: 0;
+                    left: auto;
+                    width: 450px;
+                    height: 454px;
+                }
+            }
             .banner-img {
                 background: url(../images/banner-liveclass.png) no-repeat;
                 width: 727px;

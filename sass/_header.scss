@@ -2,6 +2,9 @@ header {
     background: #1870E8;
     min-height: 65px;
     position: relative;
+    &.header-other-page {
+        background: transparent;
+    }
     .app-store {
         float: right;
         margin-top: -7px;
