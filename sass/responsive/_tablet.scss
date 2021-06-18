@@ -7,8 +7,8 @@
       .navigation {
           ul {
               li {
-                  margin-left: 10px;
-                  margin-right: 10px;
+                  margin-left: 8px;
+                  margin-right: 8px;
               }
           }
       }
@@ -76,8 +76,8 @@
           float: right;
           ul {
               li {
-                  margin-left: 10px;
-                  margin-right: 10px;
+                  margin-left: 8px;
+                  margin-right: 8px;
               }
           }
       }
@@ -87,7 +87,7 @@
       .slick-item {
 
         img {
-            width: 100%;
+
         }
       }
        .slick-arrow {
@@ -140,5 +140,14 @@
               }
           }
       }
+  }
+
+  .slick-slider .slick-list {
+      width: 540px!important;
+      padding: 0!important;
+  }
+
+  .app-benefit-section {
+      padding-top: 160px!important;
   }
 }

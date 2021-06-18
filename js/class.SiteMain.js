@@ -23,9 +23,9 @@ var SiteMain = (function() {
 	}
 
 	function openMobileMenu() {
-		$('.navigation-top-mobile .hamburger-menu').click(function() {
+		$('header .hamburger-menu').click(function() {
 			$(this).toggleClass('actived')
-			$('.navigation-right').toggleClass('actived')
+			$('html, .menu-section').toggleClass('actived')
 		})
 	}
 

@@ -92,7 +92,7 @@ header {
         height: 114px;
         background: url(../images/arrow-slider-left.png) no-repeat;
         position: absolute;
-        left: -50px;
+        left: -65px;
         top: 50%;
         margin-top: -64px;
         border: none;
@@ -102,7 +102,7 @@ header {
         &.slick-next {
             background: url(../images/arrow-slider-right.png) no-repeat;
             left: auto;
-            right: -50px;
+            right: -65px;
         }
     }
     .slick-item {
