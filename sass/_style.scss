@@ -169,25 +169,6 @@ a{text-decoration: none;&:hover {
 	padding: 20px 0;
 }
 
-
-.green {
-    color:#0AB410;
-}
-.orange {
-    color:#FD8842;
-}
-.blue {
-    color:#118AEF;
-}
-.red {
-	color: #cc0000!important;
-}
-.yellow{
-	color: #FFFF04;
-}
-.c656565 {
-	color: #656565;
-}
 .align-center{
 	display: table;
 	margin: 0 auto;
@@ -234,11 +215,21 @@ a{text-decoration: none;&:hover {
 	}
 }
 
+.italic {
+	font-style: italic;
+}
+.normal {
+	font-style: normal;
+}
+
 .title19Bold {
 	@include NunitoBold(19px, 24px);
 }
 .title20Bold {
 	@include NunitoBold(20px);
+}
+.title10Bold {
+	@include NunitoBold(10px, 14px);
 }
 .title12Bold {
 	@include NunitoBold(12px, 15px);

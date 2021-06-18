@@ -321,6 +321,13 @@
 
     .customer-feeling {
         padding-top: 90px;
+        .title35Bold {
+            font-size: 30px!important;
+            padding-bottom: 30px;
+            br {
+                display: none;
+            }
+        }
         &:before {
             background: url(../images/feeling-custom-er-mb.png) no-repeat;
             background-size: 100%;
@@ -403,6 +410,149 @@
             text-align: center;
         }
     }
+
+    .banner-slider.liveclass {
+            min-height: 340px;
+        .banner-normal  {
+            .banner-img {
+                position: relative;
+                bottom: auto;
+                left: 0;
+                width: 100%;
+                height: 210px;
+                top: 35px;
+                background-position: top center;
+            }
+            .banner-box {
+                padding: 0 15px;
+                top: 20px;
+                position: relative;
+
+                .title51Bold {
+                    font-size: 35px!important;
+                }
+                a.btn-orange {
+                    padding: 12px 76px;
+                    height: auto;
+                    line-height: 1.3;
+                }
+            }
+        }
+
+    }
+    .header-other-page {
+        .bg-header-home-01 {
+            min-height: 515px;
+        }
+    }
+    .app-livestream-section {
+        .title-section {
+
+        }
+        .text-box-block {
+            padding-top: 0;
+        }
+
+    }
+
+    .list-item-yellow-bullets {
+        padding-left: 10px;
+    }
+
+    .liveclass-middle-img .bg-img {
+        margin: 0;
+    }
+    .livestream-video {
+        padding-top: 25px;
+        .circle-bg {
+            display: none;
+        }
+        .video-content {
+            background: transparent;
+            padding: 0;
+            width: 100%;
+            .video-js {
+                width: 100%;
+                height: 235px;
+            }
+        }
+    }
+    .hot-line-consult {
+        span {
+            display: block;
+        }
+    }
+    .app-schedule-block  {
+        .pb-80 {
+            padding-bottom: 42px;
+        }
+    }
+
+    .blue-schedule-block {
+        background: transparent;
+        border-radius: 0;
+        border: none;
+        .hasScrollingBar {
+            height: auto;
+            width: 100%;
+        }
+        .schedule-header {
+            display: none;
+        }
+        .shdule-toggle-block {
+            padding: 0;
+            .toggle-header {
+                padding: 25px 15px 25px 25px ;
+                .arrow-toggle {
+                    top: 20px;
+                }
+            }
+            .toggle-table {
+                .col-item{
+
+                    &.c02, &.c03, &.c04 {
+                        .item-row {
+                            padding-left: 10px;
+                            height: 120px;
+                            .day-week {
+                                span {
+                                    display: block;
+                                    &.for-desktop {
+                                        display: none;
+                                    }
+
+                                }
+                            }
+                            .datetime {
+                                padding-top: 5px;
+                                span.float-end {
+                                    float: left!important;
+                                    padding-top: 5px;
+                                }
+                            }
+                            div {
+                                font-size: 13px!important;
+                            }
+                        }
+                    }
+                    &.c02 {
+                        width: 25%;
+                        .item-row {
+                            padding-left: 0
+                        }
+                    }
+                    &.c03 {
+                        width: 35%;
+                    }
+                    &.c04 {
+                        .item-row {
+                            padding-left: 0;
+                        }
+                    }
+                }
+            }
+        }
+    }
 }
 @media screen and (min-width: 0) and (max-width: 640px) {
     .slick-slider .slick-item {
@@ -410,6 +560,11 @@
     }
     .slick-slider .slick-list {
         height: 115px;
+    }
+
+    .customer-feeling .customer-slider .slick-list {
+        height: 215px;
+        width: 315px;
     }
 
     header .bg-header-home-01 {

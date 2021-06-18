@@ -65,6 +65,9 @@ $colorYellow: #FFD245;
 .color-yellow {
 	color: $colorYellow!important;
 }
+.color-green {
+	color: #34AA52!important;
+}
 
 @mixin BorderRadius($rd) {
 	-moz-border-radius: $rd;

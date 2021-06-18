@@ -119,7 +119,8 @@ var SiteMain = (function() {
 
 	}
 
-	function openGridMenu(idMenu) {
+	function openGridMenu($this, idMenu) {
+		$($this).toggleClass('opened');
 		$(idMenu).toggleClass('opened');
 	}
 

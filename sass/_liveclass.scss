@@ -15,6 +15,7 @@
                 position: absolute;
                 right: 0;
                 top:  65px;
+                z-index: 2;
                 .middle-title {
                     padding-top: 10px;
                     padding-bottom: 25px;
@@ -44,8 +45,11 @@
 
 .app-benefit-section {
     &.for-livestream {
+        .btn-register-orange {
+            margin-top: 40px
+        }
         &:before {
-            min-height: 1390px;
+            min-height: 1450px;
             background-size: contain;
         }
     }
@@ -154,6 +158,229 @@
         }
         &.vjs-playing .vjs-big-play-button {
             display: none;
+        }
+    }
+}
+
+
+.app-schedule-block {
+    margin-bottom: 50px;
+}
+
+.blue-schedule-block {
+    position: relative;
+    border-radius: 14px;
+    overflow: hidden;
+    background: #8AB6FB;
+    border-bottom: 16px solid #639DF8;
+    .schedule-header {
+        &:after {
+            clear: both;
+            content: '';
+            display: block;
+        }
+        .col-item {
+            float: left;
+            width: 20%;
+            color: #fff;
+            padding-left: 25px;
+            padding-top: 22px;
+            padding-bottom: 14px;
+        }
+    }
+    .hasScrollingBar {
+        height: 550px;
+        width: calc(100% - 10px);
+    }
+    .shdule-toggle-block {
+        padding-left: 17px;
+        padding-right: 17px;
+        .toggle-header {
+            background: #34AA52;
+            padding: 15px 15px 15px 25px;
+            color: #fff;
+            position: relative;
+            .arrow-toggle {
+                background: #267D3C;
+                width: 34px;
+                height: 34px;
+                @include BorderRadius(50%);
+                position: absolute;
+                right: 15px;
+                top: 7px;
+                &:before {
+                    content: '';
+                    background: url(../images/arrow-down.png) no-repeat center;
+                    width: 34px;
+                    height: 34px;
+                    position: absolute;
+                }
+                &.opened {
+                    &:before {
+                        background: url(../images/arrow-up.png) no-repeat center;
+                    }
+
+                }
+            }
+            &.blue {
+                background: #1870E8;
+                .arrow-toggle {
+                    background: #0C53B4;
+                }
+            }
+            &.yellow {
+                background: #FBBB04;
+                .arrow-toggle {
+                    background: #D49F08;
+                }
+            }
+            &.orange {
+                background: #FB8804;
+                .arrow-toggle {
+                    background: #C66C05;
+                }
+            }
+            &.red {
+                background: #EB4235;
+                .arrow-toggle {
+                    background: #C82E22;
+                }
+            }
+        }
+        .toggle-item {
+            height: 0;
+            overflow: hidden;
+            &.opened {
+                display: block;
+                height: auto;
+            }
+        }
+        .toggle-table {
+            display: flex;
+            background: #fff;
+
+            .col-item {
+                width: 20%;
+                border: 1px solid #8ab6fb;
+                text-align: center;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                color: #000000;
+                .btn-register {
+                    height: 18px;
+                    width: 52px;
+                    font-size: 10px;
+                    font-weight: 700;
+                    border-width: 2px;
+                    line-height: 18px;
+                }
+                &.c02, &.c04 {
+                    display: flex;
+                    flex-direction: column;
+                    .item-row {
+                        border-bottom: 1px solid #8ab6fb;
+                        width: 100%;
+                        height: 75px;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        &:last-child {
+                            border-bottom: none;
+                        }
+                    }
+                }
+                &.c03 {
+                    width: 40%;
+                    flex-direction: column;
+                    align-items: flex-start;
+                    .item-row {
+                        text-align: left;
+                        border-bottom: 1px solid #8ab6fb;
+                        height: 75px;
+                        display: flex;
+                        justify-content: center;
+                        align-items: start;
+                        padding-left: 40px;
+                        flex-direction: column;
+                        width: 100%;
+                        &:last-child {
+                            border-bottom: none;
+                        }
+                    }
+                    .day-week {
+                        span {
+                            display: inline-block;
+                        }
+                    }
+                    .datetime {
+                        width: calc(100% - 20px);
+                        color: #767676;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.btn-register {
+    background: #FBBB04;
+    border-bottom: 5px solid #DBA304;
+    border-radius: 34px;
+    height: 44px;
+    @include NunitoBold(13px, 44px);
+    color: #fff;
+    text-align: center;
+    width: 125px;
+    &.gray {
+        border-color: #707070;
+        background: #B2B2B2;
+    }
+}
+
+.register-consult {
+    &.monthly {
+        padding-bottom: 60px;
+        &:before {
+            top: 145px;
+        }
+        .title-section {
+            padding-bottom: 38px;
+        }
+    }
+}
+
+.register-monthly {
+    margin-top:40px;
+    .m-box {
+        background: #fff;
+        border-radius: 35px;
+        position: relative;
+        overflow: hidden;
+        width: 413px;
+        border-bottom: 20px solid #0C53B4;
+        .register-time {
+            padding: 18px 38px;
+            &.green{
+                background: #34AA52;
+            }
+            &.yellow {
+                background: #FBBB04;
+            }
+        }
+        .price {
+            padding: 18px 38px;
+        }
+        .sale-off {
+            position: absolute;
+            background: #e60019;
+            @include BorderRadius(50%);
+            width: 117px;
+            height: 117px;
+            top: 18px;
+            right: 13px;
+            text-align: center;
+            padding-top: 29px;
         }
     }
 }
