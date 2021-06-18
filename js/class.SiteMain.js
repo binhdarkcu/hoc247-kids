@@ -20,6 +20,8 @@ var SiteMain = (function() {
 		    }
 		});
 
+		playVideo('video-livestream')
+
 	}
 
 	function openMobileMenu() {
@@ -96,8 +98,8 @@ var SiteMain = (function() {
 	}
 
 
-	function playVideo() {
-		var myPlayer = videojs('video-news');
+	function playVideo(idVideo) {
+		var myPlayer = videojs(idVideo);
 		if(myPlayer) {
 			$('.play-video').click(function(){
 				if (myPlayer.paused()) {

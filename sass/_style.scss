@@ -316,6 +316,9 @@ a{text-decoration: none;&:hover {
 .title40Bold {
 	@include NunitoBold(40px);
 }
+.title51Bold {
+	@include NunitoBold(51px);
+}
 
 .regular15 {
 	@include NunitoRegular(15px, 1.3);
@@ -393,6 +396,16 @@ a{text-decoration: none;&:hover {
 	&.type02 {
 		box-shadow: 0 3px 13px 0 rgba(0, 0, 0, 0.51);
 	}
+}
+
+.btn-orange {
+	background: #FBBB04;
+	height: 61px;
+	line-height: 61px;
+	border-radius: 35px;
+	text-align: center;
+	padding: 0 25px;
+	display: inline-block;
 }
 
 .bgf8f8f8 {
