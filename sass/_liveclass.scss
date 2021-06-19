@@ -511,6 +511,7 @@
         }
         p {
             padding-bottom: 15px;
+            font-size: 16px;
         }
         .video-post {
             margin-bottom: 15px;
@@ -657,6 +658,36 @@
             overflow: hidden;
             @include BorderRadius(5px);
             margin-right: 18px;
+        }
+    }
+}
+
+.sidebar-news {
+    background: #E8F0FE;
+    @include BorderRadius(5px);
+    padding: 17px 15px;
+    margin-bottom: 20px;
+    .new-item {
+        border-bottom: 1px solid #FFFFFF;
+        margin-bottom: 12px;
+        padding-bottom: 12px;
+        &:last-child {
+            border-bottom: none;
+            padding-bottom: 0;
+            margin-bottom: 0;
+        }
+        &:after {
+            content: '';
+            clear: both;
+            display: block;
+        }
+        .new-img {
+            width: 105px;
+            float: left;
+            position: relative;
+            overflow: hidden;
+            @include BorderRadius(5px);
+            margin-right: 10px;
         }
     }
 }
