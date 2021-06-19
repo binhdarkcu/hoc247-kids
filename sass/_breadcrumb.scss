@@ -1,10 +1,5 @@
 .breadcrumb {
-    padding: 0;
-    background: transparent;
-    width: calc(100% + 32px);
-    border-bottom: 1px solid #e2e2e2;
-    margin-left: -16px;
-    padding-left: 16px;
+    padding-top: 15px;
     .horizontal-scroll-menu {
       min-height: 25px;
       a:after{
@@ -31,9 +26,8 @@
           }
             a{
                 font-size: 13px;
-                color: #b3b3b3;
+                color: #1D1C1C;
                 padding: 0;
-                padding-right: 10px;
             }
 
         }

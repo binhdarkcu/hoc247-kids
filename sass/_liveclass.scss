@@ -1,6 +1,6 @@
 .banner-slider {
     &.liveclass {
-        min-height: 420px;
+        min-height: 400px;
         .banner-normal {
             &.for-live-stream {
                 .btn-orange {
@@ -399,5 +399,83 @@
             text-align: center;
             padding-top: 29px;
         }
+    }
+}
+
+.class-schedules {
+    padding-top: 45px;
+}
+.class-lists {
+    margin-bottom: 25px;
+    .class-item {
+        @include BorderRadius(10px);
+        border: 1px solid #eee;
+        border-bottom: 8px solid #EEEEEE;
+        position: relative;
+        overflow: hidden;
+        margin-bottom: 25px;
+        .class-image {
+            .middle {
+                height: 180px;
+                padding-bottom: 180px;
+            }
+
+        }
+        .class-information {
+            padding: 8px 14px;
+            .class-title {
+                color: #333333;
+                min-height: 50px;
+            }
+            .teacher-name {
+                background: url(../images/teacher.png) no-repeat left center;
+                padding-left: 25px;
+                margin-bottom: 8px;
+                margin-top: 3px;
+                color: #767676;
+            }
+            .date-time {
+                background: url(../images/schedule.png) no-repeat left center;
+                padding-left: 25px;
+                color: #1A71E8;
+            }
+        }
+    }
+}
+
+.border-title-section {
+    margin-bottom: 18px;
+    .title-section {
+        position: relative;
+        padding-bottom: 2px;
+        display: inline-block;
+        &:after {
+            position: absolute;
+            bottom: -5px;
+            left: 0;
+            width: 100%;
+            content: '';
+            background: #077CFF;
+            height: 5px;
+            @include BorderRadius(3px);
+        }
+    }
+
+}
+
+.incomming-icon {
+    background: url(../images/coming-soon.png) no-repeat;
+    width: 49px;
+    height: 43px;
+    display: inline-block;
+    position: relative;
+    margin-left: 5px;
+    top: 10px;
+}
+
+
+.livestream-main-content {
+    .class-schedules {
+        padding-top: 0;
     }
 }

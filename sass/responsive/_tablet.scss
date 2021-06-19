@@ -150,4 +150,30 @@
   .app-benefit-section {
       padding-top: 160px!important;
   }
+
+  .customer-feeling .customer-slider .slick-list {
+      height: 220px;
+  }
+  .customer-feeling .customer-slider .slider-item {
+      width: 255px;
+  }
+
+  .class-lists {
+      .class-item {
+          .class-information {
+              .class-title {
+                  min-height: 50px!important;
+              }
+          }
+          .class-image {
+              .middle {
+                  height: 128px;
+                    padding-bottom: 128px;
+                  img {
+                      width: 120%!important;
+                  }
+              }
+          }
+      }
+  }
 }

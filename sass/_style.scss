@@ -423,14 +423,14 @@ a{text-decoration: none;&:hover {
 			line-height: 33px;
 			vertical-align: top;
 			&.current-page {
-				background: #777777;
+				background: #118AEF;
 				color: #fff;
 				@include NunitoRegular(12px, 33px);
 				text-align: center;
 				display: inline-block;
 			}
 			 &:hover {
-				 background: #777777;
+				 background: #118AEF;
 
 				a {
 					color: #fff;
