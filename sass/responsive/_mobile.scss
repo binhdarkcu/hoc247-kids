@@ -717,6 +717,31 @@
             }
         }
     }
+
+    .category-news-list {
+        .new-item {
+            border-bottom: 0;
+            padding-bottom: 0;
+            margin-bottom: 15px;
+            .news-title {
+                font-size: 15px;
+            }
+            .new-img {
+                width: 145px;
+                height: 82px;
+                margin-right: 10px;
+            }
+            p {
+                display: none;
+            }
+        }
+    }
+    .blog-category-list {
+        margin-top: 0!important;
+        .paging {
+            margin-top: 35px;
+        }
+    }
 }
 @media screen and (min-width: 0) and (max-width: 640px) {
     .slick-slider .slick-item {
