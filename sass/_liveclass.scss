@@ -691,3 +691,38 @@
         }
     }
 }
+
+.mt-18 {
+    margin-top: 18px;
+}
+
+.contact-page {
+    margin-top: 40px;
+    padding-bottom: 84px;
+    .google-map {
+        border-radius: 10px;
+        position: relative;
+        overflow: hidden;
+        margin-bottom: 30px;
+    }
+}
+
+.contact-info {
+    font-size: 13px;
+    .address {
+        background: url(../images/location-pin.png) no-repeat left center;
+        padding-left: 16px;
+    }
+    .hotline {
+        background: url(../images/phone-black.png) no-repeat left center;
+        padding-left: 16px;
+    }
+    .email {
+        background: url(../images/email-black.png) no-repeat left center;
+        padding-left: 16px;
+    }
+    .schedule {
+        background: url(../images/clock-black.png) no-repeat left center;
+        padding-left: 16px;
+    }
+}
