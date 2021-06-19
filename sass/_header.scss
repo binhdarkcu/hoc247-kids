@@ -51,7 +51,7 @@ header {
                         border-radius: 10px;
                   }
               }
-              &:hover {
+              &:hover, &.active {
                   a {
                       &:after {
                          width: 100%;

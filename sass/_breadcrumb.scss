@@ -28,8 +28,17 @@
                 font-size: 13px;
                 color: #1D1C1C;
                 padding: 0;
+                &:hover {
+                    color: $colorRed;
+                }
             }
 
         }
     }
+}
+
+.horizontal-scroll-menu {
+    overflow: auto;
+    white-space: nowrap;
+    min-height: 23px;
 }

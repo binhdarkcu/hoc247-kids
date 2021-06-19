@@ -589,6 +589,80 @@
             }
         }
     }
+
+    .single-live-stream {
+        .custom-col-left, .custom-col-right {
+            width: 100%;
+        }
+        .install-app-section {
+            padding: 30px 15px 0 15px;
+            .img-box {
+                width: 100%;
+            }
+            .app-information {
+                float: left;
+                width: 100%;
+                margin-left: 0;
+                text-align: center;
+                .color-white {
+                    b {
+                        display: block;
+                    }
+                }
+                .app-store{
+                    margin-bottom: 15px;
+                     a {
+                         margin-bottom: 10px;
+                         height: 31px;
+                         line-height: 31px;
+                         font-size: 13px;
+                         background-size: contain;
+                         min-width: 116px;
+                     }
+                }
+            }
+        }
+    }
+
+    .horizontal-breadcrumb {
+        border-bottom: 1px solid #F2F2F2;
+        margin-bottom: 20px;
+        .bread-title {
+            float: left;
+            margin-top: 4px;
+            margin-right: 5px;
+        }
+        .horizontal-scroll-menu {
+            ul {
+                li {
+                    margin-left: 25px;
+                    display: inline-block;
+                    a {
+                        @include NunitoBold(12px);
+                        color: #767676;
+                        position: relative;
+                        min-height: 23px;
+                        display: block;
+                        &:after {
+                            content: '';
+                            position: absolute;
+                            width: 100%;
+                            height: 3px;
+                            background: #FBBB04;
+                            bottom: 0;
+                            left: 0;
+                            display: none
+                        }
+                        &.active {
+                            &:after{
+                                display: block;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
 }
 @media screen and (min-width: 0) and (max-width: 640px) {
     .slick-slider .slick-item {

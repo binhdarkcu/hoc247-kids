@@ -24,7 +24,6 @@ var SiteMain = (function() {
 			 	}
 		    }
 		});
-		console.log($('#video-livestream').length)
 		if($('#video-livestream').length > 0) {
 			playVideo('video-livestream')
 		}
@@ -39,6 +38,18 @@ var SiteMain = (function() {
 		})
 	}
 
+
+	function detectOnScrollBanner(targetEle, eleStop) {
+		$(document).on('scroll', function() {
+			$(targetEle).removeClass('fixed')
+		  if ($(this).scrollTop() >= $(targetEle).position().top) {
+				$(targetEle).removeClass('absolute').addClass('fixed')
+				if($(targetEle).offset().top + $(targetEle).height() >= $(eleStop).offset().top - 10) {
+					$(targetEle).removeClass('fixed').addClass('absolute')
+				}
+		  }
+		})
+	}
 
 	function calcFixLeftAndRightSideBar(hOuter, fixedObj, bufferOffset){
 		var window_top = $(window).scrollTop();
@@ -151,7 +162,8 @@ var SiteMain = (function() {
 		playVideo:playVideo,
 		openGridMenu:openGridMenu,
 		openSlickSlider:openSlickSlider,
-		calcFixLeftAndRightSideBar:calcFixLeftAndRightSideBar
+		calcFixLeftAndRightSideBar:calcFixLeftAndRightSideBar,
+		detectOnScrollBanner: detectOnScrollBanner
 	}
 
 })();

@@ -311,6 +311,12 @@ a{text-decoration: none;&:hover {
 	@include NunitoBold(51px);
 }
 
+.fixedWhenScroll.fixed {
+    position: fixed;
+    top: 0;
+    right: auto;
+}
+
 .regular15 {
 	@include NunitoRegular(15px, 1.3);
 }

@@ -479,3 +479,128 @@
         padding-top: 0;
     }
 }
+
+.single-live-stream {
+    .custom-col-left {
+        flex: 0 0 auto;
+        width: calc(100% - 325px);
+    }
+    .custom-col-right {
+        flex: 0 0 auto;
+        width: 325px;
+    }
+    .post-detail {
+        .post-date {
+            background: #F2F2F2;
+            @include BorderRadius(3px);
+            padding: 10px;
+            margin-top: 18px;
+            margin-bottom: 25px;
+            span {
+                font-size: 13px;
+                color: #5D5D5D;
+                .fa {
+                    font-size: 14px;
+                    color: #5D5D5D;
+                    margin-right: 5px;
+                }
+            }
+        }
+        .sub-title {
+            padding-bottom: 15px;
+        }
+        p {
+            padding-bottom: 15px;
+        }
+        .video-post {
+            margin-bottom: 15px;
+            iframe {
+                width: 100%;
+            }
+        }
+    }
+    .share-box {
+        border-top: 1px solid #E2E2E2;
+        padding-top: 15px;
+        margin-top: 22px;
+        margin-bottom: 15px;
+        span.share-icon {
+            background: url(../images/share-icon.png) left center no-repeat;
+            padding-left: 21px;
+            font-size: 13px;
+            font-weight: 700;
+            line-height: 20px;
+            margin-top: 4px;
+            margin-right: 16px;
+            float: left;
+        }
+    }
+
+    .keywords {
+        span.hastags {
+            background: url(../images/tags.png) left center no-repeat;
+            padding-left: 24px;
+            font-size: 13px;
+            font-weight: 700;
+            line-height: 20px;
+            margin-top: 0;
+            margin-right: 6px;
+            float: left;
+        }
+        a {
+            background: #F2F2F2;
+            border-radius: 11px;
+            padding: 5px 12px;
+            color: #414141;
+            font-size: 13px;
+            margin-right: 3px;
+            &:hover {
+                color: $colorRed;
+            }
+        }
+    }
+
+    .install-app-section {
+        background: #1870E8;
+        @include BorderRadius(20px);
+        padding: 30px 30px 0 15px;
+        &:after {
+            content: '';
+            clear: both;
+            display: block;
+        }
+        .img-box {
+            float: right;
+            width: 235px;
+            .middle {
+                height: 211px;
+            }
+        }
+        .app-information {
+            float: right;
+            width: calc(100% - 260px);
+            margin-left: 25px;
+            p {
+                font-size: 14px;
+                padding-top: 5px;
+                color: #fff;
+            }
+            .app-store {
+                a {
+                    margin-left: 0;
+                    margin-right: 10px;
+                }
+            }
+        }
+    }
+}
+
+.related-post {
+    .class-item {
+        .class-image {
+            .middle {
+
+            }
+        }
+    }
+}
