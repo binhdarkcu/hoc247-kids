@@ -360,9 +360,14 @@
                 float: left;
                 width: 50%;
                 padding-top: 0;
+                text-align: center;
+                a {
+                    display: block;
+                    width: 100%;
+                    background-position: center!important;
+                }
                 .color-white {
                     padding-bottom: 15px;
-                    margin-right: 15px;
                     display: block;
                 }
             }

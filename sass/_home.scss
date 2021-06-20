@@ -46,7 +46,7 @@
             .animate-img {
                 width: 236px;
                 position: relative;
-                margin: 0 auto 25px;
+                margin: 0 auto;
                 height: 490px;
                 @include Transition(0.4s);
                 img {
@@ -60,6 +60,7 @@
             &:hover {
                 .animate-img {
                     width: 248px;
+                    margin-bottom: 25px;
                 }
                 .circle01 {
                     left: 0;
