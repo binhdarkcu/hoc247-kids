@@ -40,9 +40,85 @@
         }
 
         .app-image {
-            img {
-                margin-bottom: 25px;
+            position: relative;
+            width: 361px;
+            margin: 0 auto;
+            .animate-img {
+                width: 236px;
+                position: relative;
+                margin: 0 auto 25px;
+                height: 490px;
+                @include Transition(0.4s);
+                img {
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    width: 100%;
+
+                }
             }
+            &:hover {
+                .animate-img {
+                    width: 248px;
+                }
+                .circle01 {
+                    left: 0;
+                }
+                .circle02 {
+                    right: 14px;
+                }
+                .circle03 {
+                    left: 18px;
+                }
+                .circle04 {
+                    right: 0;
+                }
+            }
+            .circle01 {
+                background: #1870E8;
+                opacity: 0.5;
+                width: 150px;
+                height: 150px;
+                position: absolute;
+                top: 110px;
+                left: 8px;
+                @include BorderRadius(50%);
+                @include Transition(0.4s);
+            }
+            .circle02 {
+                background: #EB4235;
+                opacity: 0.5;
+                width: 82px;
+                height: 82px;
+                position: absolute;
+                top: 77px;
+                right: 25px;
+                @include BorderRadius(50%);
+                @include Transition(0.4s);
+            }
+            .circle03 {
+                background:#FBBB04;
+                opacity: 0.5;
+                width: 68px;
+                height: 68px;
+                position: absolute;
+                bottom: 157px;
+                left: 34px;
+                @include BorderRadius(50%);
+                @include Transition(0.4s);
+            }
+            .circle04 {
+                background: #34AA52;
+                opacity: 0.5;
+                width: 132px;
+                height: 132px;
+                position: absolute;
+                bottom: 149px;
+                right: 8px;
+                @include BorderRadius(50%);
+                @include Transition(0.4s);
+            }
+
         }
         .ani-block {
             position: absolute;
@@ -113,13 +189,17 @@
                 height: 170px;
                 overflow: hidden;
                 border-radius: 50%;
+
                 .middle {
+                    transition: transform .2s;
                     padding-bottom: 100%;
 
                 }
             }
-            img {
-
+            &:hover {
+                .middle {
+                    transform: scale(1.1);
+                }
             }
             &:before{
                 content: "";

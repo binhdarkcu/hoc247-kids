@@ -20,7 +20,8 @@ html {
 a {
     color: #202020;
 	&:hover {
-		color: #e60019;
+
+		color: $colorRed;
 	}
 }
 .container {

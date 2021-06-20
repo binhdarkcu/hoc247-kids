@@ -37,7 +37,7 @@ $defaultFont: normal 14px/1.4 'Nunito', sans-serif;
 }
 
 
-@mixin Transition($second, $optional: "") {
+@mixin Transition($second, $optional: ease) {
 	-webkit-transition: all $second $optional;
     -moz-transition: all $second $optional;
     -o-transition: all $second $optional;
