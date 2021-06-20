@@ -122,6 +122,15 @@
 
     }
     header {
+        .header-top {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            background: #1870e8;
+            padding: 0 15px;
+            z-index: 1000;
+        }
         .bg-header-home-01 {
             min-height: 375px;
                 background-size: cover;
@@ -184,15 +193,21 @@
                         margin-left: 0;
                         margin-right: 0;
                         width: 100%;
-                        &:hover {
-                            &:after {
-                                display: none;
+                        &:hover, &.active {
+                            a {
+                                color: $colorYellow;
+                                &:after {
+                                    display: none;
+                                }
                             }
                         }
                     }
                 }
             }
         }
+    }
+    .banner-slider {
+        margin-top: 65px;
     }
     .slick-slider {
         .slick-list {
