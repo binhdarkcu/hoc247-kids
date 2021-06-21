@@ -12,8 +12,8 @@
    <body>
       <div class="wrapper">
          <!--HEADER-->
-         <header class="header-other-page">
-            <div class="bg-header-home-01"></div>
+         <div class="bg-header-home-01 for-other-page"></div>
+         <header>
             <!--TOP-->
             <div class="container relative">
                 <div class="row">
@@ -42,21 +42,25 @@
                             </div>
                         </div>
                     </div>
-
-                    <div class="banner-slider liveclass relative">
-                        <div class="banner-normal ">
-                            <div class="banner-box center">
-                                <div class="title51Bold color-white">Lớp học trực tuyến</div>
-                                <div class="title51Bold color-white middle-title">LIVECLASS</div>
-                                <a href="#" class="btn-orange title25Bold color-white">Học tại nhà, hiệu quả như tại lớp</a>
-                            </div>
-                            <div class="banner-img"></div>
-                        </div>
-                    </div>
                 </div>
             </div>
          </header>
          <!--/HEADER-->
+
+         <div class="container relative">
+             <div class="row">
+                 <div class="banner-slider liveclass">
+                     <div class="banner-normal ">
+                         <div class="banner-box center">
+                             <div class="title51Bold color-white">Lớp học trực tuyến</div>
+                             <div class="title51Bold color-white middle-title">LIVECLASS</div>
+                             <a href="#" class="btn-orange title25Bold color-white">Học tại nhà, hiệu quả như tại lớp</a>
+                         </div>
+                         <div class="banner-img"></div>
+                     </div>
+                 </div>
+             </div>
+         </div>
 
          <!--SHORT NEWS-->
          <div class="main-content">
@@ -82,7 +86,7 @@
              </div>
 
              <div class="app-benefit-section for-livestream">
-                 <div class="for-mobile middle-bg"></div>
+                 <div class="middle-bg"></div>
                  <div class="container relative">
                      <div class="title35Bold color-white center title-section">Lớp học trực tuyến LIVECLASS <br/>chính là giải pháp toàn diện nhất</div>
                      <div class="row relative">
@@ -1088,25 +1092,28 @@
                          <div class="col-sm-12 col-md-12 col-lg-6">
                              <div class="register-monthly ">
                                  <div class="m-box">
-                                     <div class="register-time green title32Bold color-white">1 Tháng</div>
-                                     <div class="price color-red title30Bold">500.000đ/tháng</div>
+                                     <div class="relative">
+                                         <div class="register-time green title32Bold color-white">1 Tháng</div>
+                                         <div class="price color-red title30Bold">500.000đ/tháng</div>
+                                     </div>
                                  </div>
                              </div>
                              <div class="register-monthly ">
                                  <div class="m-box">
-                                     <div class="register-time yellow title32Bold color-white">1 Năm</div>
-                                     <div class="price color-red title30Bold">300.000đ/tháng</div>
-                                     <div class="sale-off">
-                                         <div class="color-white title19Bold">Tiết kiệm</div>
-                                         <div class="color-white title38Bold">40%</div>
+                                     <div class="relative">
+                                         <div class="register-time yellow title32Bold color-white">1 Năm</div>
+                                         <div class="price color-red title30Bold">300.000đ/tháng</div>
+                                         <div class="sale-off">
+                                             <div class="color-white title19Bold">Tiết kiệm</div>
+                                             <div class="color-white title38Bold">40%</div>
+                                         </div>
                                      </div>
                                  </div>
                              </div>
                          </div>
                          <div class="col-sm-12 col-md-12 col-lg-6">
                              <div class="register-radius-box">
-                                 <div class="title35Bold color-red big-title">​ĐĂNG KÝ NHẬN TƯ VẤN</div>
-                                 <div class="regular15 color-red">Liên hệ ngay để được chúng tôi tư vấn</div>
+                                 <div class="title35Bold color-red big-title">Đăng ký đặt chổ</div>
                                  <form action="" method="">
                                      <div class="input-field">
                                          <input type="text" value="" name="fullname" placeholder="Họ và tên *"/>
@@ -1115,10 +1122,22 @@
                                          <input type="tel" value="" name="phone" placeholder="Số điện thoại *"/>
                                      </div>
                                      <div class="input-field">
-                                         <input type="email" value="" name="email" placeholder="Email"/>
+                                         <select name="choose-class" class="custom-select">
+                                             <option>Chọn lớp</option>
+                                         </select>
+                                     </div>
+                                     <div class="input-field">
+                                         <select name="choose-subject" class="custom-select">
+                                             <option>Chọn môn học</option>
+                                         </select>
+                                     </div>
+                                     <div class="input-field">
+                                         <select name="choose-time" class="custom-select">
+                                             <option>Chọn khung giờ học</option>
+                                         </select>
                                      </div>
                                      <div class="btn-register-orange">
-                                         <a href="#" class="btn-orange-68 title18Bold">Xem chi tiết</a>
+                                         <a href="#" class="btn-orange-68 title18Bold">Đăng ký đặt chổ</a>
                                      </div>
                                  </form>
                              </div>

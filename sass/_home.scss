@@ -44,9 +44,9 @@
             width: 361px;
             margin: 0 auto;
             .animate-img {
-                width: 236px;
+                width: 248px;
                 position: relative;
-                margin: 0 auto;
+                margin: 0 auto 25px;
                 height: 490px;
                 @include Transition(0.4s);
                 img {
@@ -58,10 +58,6 @@
                 }
             }
             &:hover {
-                .animate-img {
-                    width: 248px;
-                    margin-bottom: 25px;
-                }
                 .circle01 {
                     left: 0;
                 }
@@ -153,21 +149,38 @@
 }
 .app-benefit-section {
     position: relative;
-    padding-top: 150px;
+    padding-top: 200px;
     padding-bottom: 150px;
     .btn-register-orange {
         margin-top: 55px;
+    }
+    .middle-bg {
+        background: #1870E8;
+        position: absolute;
+        top: 250px;
+        height: calc(100% - 430px);
+        width: 100%;
+        left: 0;
     }
     &:before {
         content: "";
         position: absolute;
         top: 0;
         left: 0;
-        background: url(../images/bg-blue-2.png) repeat-x 0 0;
-        min-height: 1120px;
-        width: calc(100% + 330px);
+        background: url(../images/bg-benefit1.png) repeat-x 0 0;
+        min-height: 261px;
+        width: 100%;
     }
 
+    &:after {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        background: url(../images/bg-benefit2.png) repeat-x 0 0;
+        min-height: 193px;
+        width: 100%;
+    }
 
     .white-radius-box {
         padding: 0 40px;
@@ -335,7 +348,7 @@
         content: '';
         background: url(../images/bg-customer.png) no-repeat;
         background-size: 100%;
-        width: calc(100% + 400px);
+        width: calc(100% + 420px);
         height: 100%;
         position: absolute;
         top: 0;

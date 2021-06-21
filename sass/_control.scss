@@ -330,19 +330,19 @@
 }
 
 .custom-select{
-    background: #fff url(../images/icons/arrow-select.svg) no-repeat right .75rem center;
+    background: #fff url(../images/arrow-select.png) no-repeat right 1.45rem center;
     display: inline-block;
     width: 100%;
-    padding: .375rem 1.75rem .375rem .75rem;
-    line-height: 1.5;
-    color: #BCBCBC;
+    color: #767676;
+    padding: 0px 1.45rem 0 23px;
+    line-height: 60px;
+    border: none;
     vertical-align: middle;
-     background-size: 6px;
-	 height: 40px;
+     background-size: 11px;
+	 height: 60px;
  	width: 100%;
  	@include NunitoRegular(13px);
- 	@include BorderRadius(5px);
- 	border: 1px solid #e2e2e2;
+ 	@include BorderRadius(10px);
     -webkit-appearance: none;
     -moz-appearance: none;
     appearance: none;

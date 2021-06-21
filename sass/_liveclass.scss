@@ -8,11 +8,12 @@
                 }
                 .banner-box{
                     left: 0;
+                    top: 100px;
                     width: 50%;
                 }
                 .banner-img {
                     background: url(../images/banber-live-stream-2.png) no-repeat;
-                    bottom: -56px;
+                    bottom: -100px;
                     right: 0;
                     left: auto;
                     width: 450px;
@@ -43,7 +44,7 @@
 }
 
 .app-livestream-section {
-    padding-top: 60px;
+    padding-top: 100px;
     .title-section {
         padding-bottom: 35px;
     }
@@ -65,10 +66,7 @@
         .btn-register-orange {
             margin-top: 40px
         }
-        &:before {
-            min-height: 1450px;
-            background-size: contain;
-        }
+
     }
     .title-section{
         padding-bottom: 40px;
@@ -275,7 +273,9 @@
         .toggle-table {
             display: flex;
             background: #fff;
-
+            &:nth-child(2n) {
+                background: #E8F0FE;
+            }
             .col-item {
                 width: 20%;
                 border: 1px solid #8ab6fb;
@@ -284,14 +284,7 @@
                 align-items: center;
                 justify-content: center;
                 color: #000000;
-                .btn-register {
-                    height: 18px;
-                    width: 52px;
-                    font-size: 10px;
-                    font-weight: 700;
-                    border-width: 2px;
-                    line-height: 18px;
-                }
+
                 &.c02, &.c04 {
                     display: flex;
                     flex-direction: column;
@@ -368,14 +361,27 @@
 }
 
 .register-monthly {
-    margin-top:40px;
+    margin-top:70px;
     .m-box {
         background: #fff;
         border-radius: 35px;
         position: relative;
-        overflow: hidden;
         width: 413px;
-        border-bottom: 20px solid #0C53B4;
+        .relative {
+            overflow: hidden;
+            border-radius: 35px;
+        }
+        &:after {
+            content: "";
+            background: #0c53b4;
+            border-radius: 35px;
+            position: absolute;
+            bottom: -15px;
+            left: 0;
+            width: 100%;
+            height: 60%;
+            z-index: -1;
+        }
         .register-time {
             padding: 18px 38px;
             &.green{
@@ -386,14 +392,14 @@
             }
         }
         .price {
-            padding: 18px 38px;
+            padding: 18px 38px 32px;
         }
         .sale-off {
             position: absolute;
             background: #e60019;
             @include BorderRadius(50%);
-            width: 117px;
-            height: 117px;
+            width: 115px;
+            height: 115px;
             top: 18px;
             right: 13px;
             text-align: center;
@@ -419,7 +425,9 @@
                 height: 180px;
                 padding-bottom: 180px;
             }
-
+            img {
+                width: 100%;
+            }
         }
         .class-information {
             padding: 8px 14px;
@@ -643,6 +651,9 @@
         border-bottom: 1px dotted #E2E2E2;
         margin-bottom: 20px;
         padding-bottom: 20px;
+        .news-title {
+            padding-bottom: 5px;
+        }
         &:last-child {
             border-bottom: none;
         }
