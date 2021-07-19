@@ -12,7 +12,7 @@
    <body>
       <div class="wrapper">
          <!--HEADER-->
-         <div class="bg-header-home-01"></div>
+         <div class="bg-header-home-01 for-other-page"></div>
          <header>
             <!--TOP-->
             <div class="container relative">
@@ -32,13 +32,17 @@
                                     <li><a href="#">LIVECLASS</a></li>
                                     <li><a href="#">LIVESTREAM</a></li>
                                     <li><a href="#">BLOG</a></li>
-                                    <li><a href="#">LIÊN HỆ</a></li>
                                 </ul>
                             </div>
-                            <div class="app-store">
-                                <div class="for-mobile app-store-title title13Bold">Tải ứng dụng HỌC247 KIDS</div>
-                                <a href="#" class="ios-app btn-orange-30 title13Bold"><i></i>App Store</a>
-                                <a href="#" class="google-app btn-green-30 title13Bold"><i></i>Google Play</a>
+                            <div class="search-form-header">
+                              <form action="" method="">
+                                <div class="bg-search-form">
+                                  <input type="text" name="s" value="" />
+                                </div>
+                              </form>
+                            </div>
+                            <div class="learn-online-header">
+                                <a href="#" class="learn-online btn-orange30 title13Bold"><i></i>Học online</a>
                             </div>
                         </div>
                     </div>
@@ -46,25 +50,116 @@
             </div>
          </header>
          <!--/HEADER-->
-         <div class="container">
+         <div class="container relative">
              <div class="row">
-                 <div class="banner-slider relative">
-                     <div class="slick-slider">
-                         <div class="slick-item">
-                             <img src="images/banner-1.png" />
+                 <div class="banner-slider for-home-page liveclass">
+                     <div class="banner-normal ">
+                         <div class="banner-box center">
+                             <img src="images/nen-tang-hoc.png" /> <br/>
+                             <a href="#" class="btn-red-30 title25Bold color-white">Đăng ký ngay</a>
                          </div>
-                         <div class="slick-item">
-                             <img src="images/banner-1.png" />
-                         </div>
-                         <div class="slick-item">
-                             <img src="images/banner-1.png" />
-                         </div>
+                         <div class="banner-img" style="background: url(images/img-banner-home.png) no-repeat;background-size: inherit;"></div>
                      </div>
                  </div>
              </div>
          </div>
          <!--SHORT NEWS-->
          <div class="main-content">
+             <div class="three-button-video">
+                <div class="container">
+                  <div class="col-lg-12">
+                      <div class="three-buttons">
+                        <a href="#"><img src="images/learn-online.png" /></a>
+                        <a href="#"><img src="images/app-store-44.png" /></a>
+                        <a href="#"><img src="images/google-play-44.png" /></a>
+                      </div>
+                      <div class="blue-bg-video">
+                        <video
+                           id="video-livestream"
+                           class="video-js"
+                           preload="auto"
+                           controls
+                           width="808"
+                           height="455"
+                           poster="images/video-home.png"
+                           data-setup='{ "techOrder": ["youtube", "html5"], "sources": [{ "type": "video/youtube", "src": "https://www.youtube.com/watch?v=CFQzQN9P23w"}], "youtube": { "customVars": { "wmode": "transparent" } } }'
+                           >
+                        </video>
+                      </div>
+
+                      <div class="develop-kid-math">
+                          <div class="title35Bold color-red center">
+                              Nội dung ....
+                          </div>
+                          <div class="blue-section-box">
+                              <div class="title35Bold color-white center">
+                                  Phát triển ...
+                              </div>
+                              <div class="blue-two-column">
+                                <div class="img-box">
+                                  <img src="images/develop01.png" />
+                                </div>
+                                <div class="list-yellow-bullets">
+                                  <ul>
+                                    <li>Cung cấp ...</li>
+                                    <li>Cung cấp ... <b class="color-yellow">"Toán nâng cao"</b></li>
+                                    <li>Cung cấp ... <b class="color-yellow">"Toán nâng cao"</b></li>
+                                    <li>Cung cấp ...</li>
+
+                                  </ul>
+                                  <a href="#" class="view-video title18Bold">Xem video</a>
+                                </div>
+                              </div>
+                          </div>
+                      </div>
+
+                      <div class="develop-kid-math">
+                          <div class="red-section-box">
+                              <div class="title35Bold color-white center">
+                                  Học tiếng anh .... <b class="color-yellow">giáo viên nước ngoài</b>
+                              </div>
+                              <div class="container">
+                                    <div class="row">
+                                        <div class="col-sm-12 col-md-12 col-lg-4">
+                                            <div class="white-radius-box">
+                                              <div class="imgbox">
+                                                <img src="images/family.png" />
+                                              </div>
+                                              <div class="title15Bold description">
+                                                  HOC247 Kids đem đến .... <b class="color-red">"Family and friends"</b> và <b class="color-red">"Explore our world"</b>
+                                              </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-12 col-md-12 col-lg-4">
+                                          <div class="white-radius-box">
+                                            <div class="imgbox">
+                                              <img src="images/english-kid.png" />
+                                            </div>
+                                            <div class="title15Bold description">
+                                                HOC247 Kids đem đến .... <b class="color-red">"Family and friends"</b> và <b class="color-red">"Explore our world"</b>
+                                            </div>
+                                          </div>
+                                        </div>
+                                        <div class="col-sm-12 col-md-12 col-lg-4">
+                                          <div class="white-radius-box">
+                                            <div class="imgbox">
+                                              <img src="images/phonic.png" />
+                                            </div>
+                                            <div class="title15Bold description">
+                                                HOC247 Kids đem đến .... <b class="color-red">"Family and friends"</b> và <b class="color-red">"Explore our world"</b>
+                                            </div>
+                                          </div>
+                                        </div>
+                                    </div>
+                              </div>
+                              <a href="#" class="view-video title18Bold">Xem video</a>
+                          </div>
+                      </div>
+
+                  </div>
+                </div>
+             </div>
+
              <div class="app-study-section">
                  <div class="container">
                      <div class="col-sm-12 col-md-12 col-lg-12">
@@ -448,10 +543,10 @@
       <script src="js/jquery-migrate-1.2.1.js"></script>
 
       <script src="bootstrap/bootstrap.bundle.min.js"></script>
-<!--
+
       <script src="js/videojs-ie8.min.js"></script>
       <script src="js/video.js"></script>
-      <script src="js/Youtube.min.js"></script> -->
+      <script src="js/Youtube.min.js"></script>
 
       <script src="js/slick.min.js"></script>
       <!--Site-->
