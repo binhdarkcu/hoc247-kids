@@ -243,6 +243,9 @@
 
 .btn-red-border {
   background: url(../images/btn-red-border.png) no-repeat center;
+  &:hover {
+    color: #fff!important;
+  }
 }
 
 .btn-green-30 {
