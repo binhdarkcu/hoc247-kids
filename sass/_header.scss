@@ -65,25 +65,20 @@ header {
 
 }
 
-.search-form-header {
+.phone-form-header {
   float: left;
   margin-top: -6px;
   margin-left: 5px;
-  .bg-search-form {
+  .bg-phone-form {
     background: url(../images/bg-search-header.png) no-repeat;
     width: 151px;
     height: 30px;
-    input {
-      background: transparent;
-      outline: none;
-      border: none;
-      width: 100%;
-      height: 30px;
-      padding-left: 35px;
-      padding-right: 5px;
-      @include NunitoBold(13px);
-      color: #fff;
+    span {
+      padding-top: 5px;
+      display: inline-block;
+      padding-left: 33px;
     }
+    
   }
 }
 

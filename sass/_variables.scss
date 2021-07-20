@@ -52,6 +52,11 @@ $colorBlue: #1870E8;
 $colorD9: #d9d9d9;
 $colorGray: #e2e2e2;
 $colorYellow: #FFD245;
+$colorBlueBold: #0C53B4;
+
+.color-bold-blue {
+	color: $colorBlueBold!important;
+}
 
 .color-blue {
 	color: $colorBlue!important;

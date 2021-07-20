@@ -13,15 +13,25 @@ var SiteMain = (function() {
 			createSlickSlider('.customer-slider', false, 3, false)
 		}
 
+		if($('.learn-english-slider').length > 0) {
+			if( $(window).width() < 992) {
+				createSlickSlider('.learn-english-slider', false, 1, false)
+			}
+		}
+
 		//$('ul.sf-menu').superfish();
 		openMobileMenu()
 
 
 		$(window).on('resize', function() {
 		   if( $(window).width() < 992) {
-			   if($('.slick-slider').length > 0) {
+			   	if($('.slick-slider').length > 0) {
 		         $('.slick-slider')[0].slick.refresh()
-			 	}
+			 		}
+
+					if($('.learn-english-slider').length > 0) {
+						location.reload();
+					}
 		    }
 		});
 		if($('#video-livestream').length > 0) {

@@ -234,6 +234,10 @@
 
     .app-study-section {
         .app-image {
+          width: 100%!important;
+          .circle01, .circle02, .circle03, .circle04 {
+            display: none;
+          }
             img {
                 width: 90%;
             }
@@ -439,6 +443,13 @@
 
     .banner-slider.liveclass {
             min-height: 340px;
+            &.for-home-page {
+              .banner-img {
+                background-size: 230px!important;
+                background-position: center!important;
+                margin-top: 50px;
+              }
+            }
         .banner-normal  {
             .banner-img {
                 position: relative;
@@ -616,6 +627,16 @@
 
     .banner-slider.liveclass {
         margin-top: 5px;
+        &.for-home-page {
+          .banner-box {
+            img {
+              width: 268px;
+            }
+          }
+          .btn-red-30 {
+            margin-top: 11px;
+          }
+        }
         .banner-normal.for-live-stream {
 
             .banner-img {
@@ -870,6 +891,141 @@
         &.for-other-page {
             min-height: 517px;
         }
+        &.for-home-page {
+          min-height: 370px;
+        }
+   }
+   .three-button-video {
+     margin-top: 30px;
+   }
+   .three-button-video {
+     .three-buttons {
+       width: calc(100% + 10px);
+       margin-left: -5px;
+       margin-bottom: 20px;
+       a {
+         margin: 0 5px;
+         width: calc(33.333% - 10px);
+         float: left;
+         img {
+           width: 100%;
+         }
+       }
+     }
+     .blue-bg-video {
+       width: 100%;
+       .video-js {
+         width: 100%;
+         height: 250px;
+       }
+     }
+   }
+   .develop-kid-math {
+     .red-section-box {
+        padding: 40px 20px;
+        .container {
+          padding-left: 5px;
+          padding-right: 5px;
+        }
+     }
+     .blue-section-box {
+       padding: 40px 15px;
+       .blue-two-column {
+         .img-box {
+           width: 100%;
+           text-align: center;
+           img {
+             width: 100%;
+           }
+         }
+         .list-yellow-bullets {
+           width: 100%;
+           margin-top: 30px;
+           margin-left: 0;
+         }
+       }
+     }
+     a.view-video {
+        margin: 5px auto;
+        display: table;
+     }
+   }
+   .learn-english-slider {
+     &.slick-slider {
+       .slick-list {
+         height: 390px;
+         width: 305px!important;
+       }
+       .slick-dots {
+         display: table;
+         margin: 0 auto;
+         li {
+           display: inline-block;
+           margin: 0 5px;
+           button {
+             border: none;
+             outline: none;
+             background: #E68A83;
+             width: 12px;
+             height: 12px;
+             @include BorderRadius(50%);
+             text-indent: -99999999px;
+           }
+           &.slick-active {
+             button {
+               background: #FFFFFF;
+             }
+           }
+         }
+       }
+     }
+     .slider-item {
+       width: 305px;
+     }
+   }
+
+   .app-benefit-section {
+     .btn-register-orange {
+
+       .btn-red-border {
+         background-size: contain;
+         min-width: inherit;
+         display: block;
+       }
+     }
+   }
+   .price-to-learn {
+     .price-learn-item {
+       margin-left: 7px;
+       margin-right: 7px;
+       .price-per-monthly {
+         min-height: 110px;
+         padding-top: 44px;
+         .month {
+           font-size: 13px!important;
+         }
+         .color-red {
+           font-size: 23px!important;
+         }
+       }
+     }
+   }
+   .bg-price-learn {
+     margin-top: 15px;
+     img {
+       width: 100%;
+     }
+   }
+   .app-benefit-section.for-save-money {
+     padding-bottom: 140px;
+   }
+
+   .phone-form-header {
+     width: 100%;
+     .bg-phone-form {
+       display: table;
+margin: 0 auto 20px;
+     }
    }
 }
 @media screen and (min-width: 0) and (max-width: 640px) {
@@ -886,4 +1042,29 @@
     }
 
 
+}
+
+@media screen and (min-width: 0) and (max-width: 320px) {
+  .learn-english-slider {
+    &.slick-slider {
+      .slick-list {
+        width: 245px!important;
+      }
+    }
+    .slider-item {
+      width: 245px;
+
+    }
+  }
+
+  .customer-feeling {
+    .customer-slider {
+      .slick-list {
+        width: 295px;
+      }
+      .slider-item {
+          width: 295px;
+      }
+    }
+  }
 }

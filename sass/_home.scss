@@ -241,6 +241,71 @@
             }
         }
     }
+    &.for-save-money {
+      padding-bottom: 290px;
+      z-index: 1;
+      &:after {
+        background: #1870e8;
+      }
+      .short-description {
+        @include NunitoRegular(20px, 31px);
+        padding-top: 15px;
+        text-align: center;
+        margin-bottom: 35px;
+      }
+      .big-title {
+        line-height: 1.4;
+      }
+    }
+}
+
+.feeling-home-page {
+  margin-top: -60px;
+  z-index: 2;
+}
+.bg-price-learn {
+  text-align: center;
+}
+.price-to-learn {
+  .like-box {
+    position: absolute;
+    background: #08C246;
+    font-size: 15px;
+    color: #fff;
+    text-align: center;
+    padding: 8px;
+    z-index: 2;
+    width: 100%;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+  }
+  .price-learn-item {
+    float: left;
+    text-align: center;
+    width: calc(50% - 15px);
+    margin-right: 15px;
+    position: relative;
+    margin-bottom: 30px;
+    &:before {
+      content: '';
+      background: #E2E2E2;
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      border-radius: 10px;
+      top: 12px;
+      left: 0;
+      z-index: 1;
+    }
+    .price-per-monthly {
+      position: relative;
+      background: #FFFFFF;
+      border-radius: 10px;
+      min-height: 150px;
+      z-index: 1;
+      padding-top: 60px;
+    }
+  }
 }
 .white-radius-box {
     background: #fff;
@@ -359,7 +424,7 @@
         content: '';
         background: #FBBB04;
         width: 100%;
-        height: 50%;
+        height: 51%;
         bottom: 0;
         left: 0;
         position: absolute;
@@ -410,6 +475,14 @@
     }
 }
 
+.learn-english-slider {
+  .slider-item {
+    width: calc(33.333% - 16px);
+    margin-left: 8px;
+    margin-right: 8px;
+    float: left;
+  }
+}
 .register-consult {
     background: url(../images/bg-star-dot-3.png) no-repeat #1870E8;
     background-size: 100%;
@@ -479,6 +552,9 @@
   .three-buttons {
     display: table;
     margin: 0 auto 12px;
+    a {
+      margin: 0 8px;
+    }
   }
   .blue-bg-video {
     background: #1870E8;
@@ -486,6 +562,30 @@
     padding: 17px;
     display: table;
     margin: 0 auto;
+  }
+}
+
+.color-block-section {
+  @include BorderRadius(20px);
+  padding: 40px 28px;
+  margin-top: 30px;
+  min-height: 496px;
+  &.green {
+    background: #34AA52;
+  }
+  &.yellow {
+    background: #FFD245;
+  }
+  .imgbox {
+    display: table;
+    margin: 0 auto 22px;
+  }
+  a{
+     display: block;
+  }
+  p {
+    padding-top: 15px;
+    @include NunitoBold(15px, 20px);
   }
 }
 
@@ -519,7 +619,7 @@
         li {
           margin-bottom: 25px;
           color: #fff;
-          @include NunitoBold(15px);
+          @include NunitoBold(15px, 18px);
           position: relative;
           padding-left: 20px;
           &:before {
@@ -553,7 +653,7 @@
         min-height: 340px;
         margin-top: 35px;
         text-align: center;
-        padding: 30px;
+        padding: 30px 20px;
         .imgbox {
           min-height: 150px;
         }
