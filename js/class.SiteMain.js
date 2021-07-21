@@ -28,10 +28,6 @@ var SiteMain = (function() {
 			   	if($('.slick-slider').length > 0) {
 		         $('.slick-slider')[0].slick.refresh()
 			 		}
-
-					if($('.learn-english-slider').length > 0) {
-						location.reload();
-					}
 		    }
 		});
 		if($('#video-livestream').length > 0) {

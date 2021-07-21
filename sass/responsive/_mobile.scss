@@ -968,6 +968,7 @@
              background: #E68A83;
              width: 12px;
              height: 12px;
+             padding: 0;
              @include BorderRadius(50%);
              text-indent: -99999999px;
            }
@@ -1055,6 +1056,10 @@ margin: 0 auto 20px;
       width: 245px;
 
     }
+  }
+
+  .banner-slider.liveclass.for-home-page .banner-box img {
+    width: 220px;
   }
 
   .customer-feeling {
